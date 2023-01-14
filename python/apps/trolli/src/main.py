@@ -1,33 +1,11 @@
 from board import Board
 import flet
 from flet.buttons import RoundedRectangleBorder
-from flet import (
-    UserControl,
-    View,
-    AlertDialog,
-    Column,
-    Row,
-    Container,
-    Icon,
-    Page,
-    Text,
-    ElevatedButton,
-    AppBar,
-    PopupMenuButton,
-    PopupMenuItem,
-    TextField,
-    colors,
-    icons,
-    padding,
-    theme,
-    margin,
-    TemplateRoute,
-)
+from flet import *
 from user import User
 from data_store import DataStore
 from memory_store import InMemoryStore
 from app_layout import AppLayout
-
 
 class TrelloApp(UserControl):
     def __init__(self, page: Page, store: DataStore):
